@@ -6,3 +6,5 @@ codebase for remohunt remote job aggregator
 #then db 
 #then backend 
 MERN
+
+# from develop branch
