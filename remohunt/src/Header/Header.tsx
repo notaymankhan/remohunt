@@ -13,7 +13,7 @@ const Header =()=>{
         <div className='flex gap-3 items-center'>
             <div className='flex gap-2 items-center'>
                 <div>Ayman</div>
-                <Indicator processing>
+                <Indicator processing color='bright-sun.4'>
                     <Avatar src="avatar-9.png" alt="Ayman" />
                 </Indicator>
 
@@ -22,7 +22,7 @@ const Header =()=>{
                 <IconSettings stroke={1.5} />
             </div>
             <div className='items-center bg-mine-shaft-900 p-1 rounded-full'>
-                <Indicator processing offset={5} color='brightSun.4'>
+                <Indicator processing offset={5} color='bright-sun.4'>
                     <IconBell stroke={1.5} />
                 </Indicator>
                 
