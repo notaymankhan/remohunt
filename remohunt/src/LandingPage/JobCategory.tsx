@@ -81,7 +81,7 @@ const JobCategory=()=>{
                         return(
                             <Carousel.Slide>
                                 <div key={index}>
-                                <div className="flex flex-col items-center w-64 gap-2 border border-bright-sun-400 p-5 rounded-lg hover:cursor-pointer hover:shadow-[0_0_5px_2px_black] my-3 transition duration-300 ease-in-out !shadow-bright-sun-300">
+                                <div className="flex flex-col items-center gap-2 border border-bright-sun-400 p-5 rounded-lg hover:cursor-pointer hover:shadow-[0_0_5px_2px_black] my-3 transition duration-300 ease-in-out !shadow-bright-sun-300">
                                         <div className="p-2 bg-bright-sun-400 rounded-full">
                                             <img className='h-8 w-8' src={`/Category/${jobCategory.name}.png`} alt={`${jobCategory.name}`} />
                                         </div>
