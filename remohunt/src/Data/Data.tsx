@@ -36,3 +36,5 @@ const testimonials = [
     }
 ]
 
+export {companies,jobCategory,work,testimonials};
+
