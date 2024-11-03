@@ -1,5 +1,5 @@
 import MultiInput from "./MultiInput";
-import { dropDownData } from "../Data/JobsData";
+import { dropdownData } from "../Data/JobsData";
 import { Divider } from '@mantine/core';
 import { useState } from 'react';
 import { RangeSlider } from '@mantine/core';
@@ -11,7 +11,7 @@ const SearchBar = () => {
     return (
         <div className="flex px-5 py-8">
             {
-                dropDownData.map((item,index) =>{
+                dropdownData.map((item,index) =>{
                     return (
                         <><div key={index} className="w-1/5">
                             <MultiInput {...item} />
