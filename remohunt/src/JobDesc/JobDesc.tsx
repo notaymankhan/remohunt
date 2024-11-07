@@ -7,7 +7,7 @@ import DOMPurify from 'dompurify';
 
 
 
-const JobDesc = () => {
+const JobDesc = (props:any) => {
     const data= DOMPurify.sanitize(desc);
     return (  
         <div className="w-2/3">
@@ -23,9 +23,9 @@ const JobDesc = () => {
                 </div>
                 <div className='flex flex-col gap-2 items-center'>
                     <Link to='/apply-job'>
-                        <Button size = 'sm' color='bright-sun.4' variant="light" >Apply</Button>
+                        <Button size = 'sm' color='bright-sun.4' variant="light" >{props.edit?"Edit":"Apply"}</Button>
                     </Link>
-                    <div className="text-bright-sun-400 cursor-pointer "><IconBookmark stroke={2} /></div>
+                    <div className="text-bright-sun-400 cursor-pointer ">{props.edit?<Button size = 'sm' color='red.4' variant="light" >Delete</Button>:<IconBookmark stroke={2} />}</div>
                     
 
                 </div>
@@ -80,7 +80,7 @@ const JobDesc = () => {
                         </div>
                     </div>
                     <div className='flex flex-col gap-2 items-center'>
-                        <Link to=''>
+                        <Link to='/company'>
                             <Button color='bright-sun.4' variant="light" >Company Page</Button>
                         </Link>
                         

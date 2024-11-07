@@ -17,6 +17,8 @@ const TalentProfilePage = () => {
                 <Profile {...profile}/>
                 <RecommendTalent/>
                 
+
+                
             </div>
 
 

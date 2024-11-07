@@ -11,8 +11,16 @@ import Footer from './Footer/Footer';
 import Header from './Header/Header';
 import PostJobPage from './Pages/PostJobPage';
 import ApplyJobPage from './Pages/ApplyJobPage';
+import CompanyPage from './Pages/CompanyPage';
+import PostedJobPage from './Pages/PostedJobPage';
 import '@mantine/tiptap/styles.css';
+import '@mantine/dates/styles.css';
+
 import JobDescPage from './Pages/JobDescPage';
+import JobHistoryPage from './Pages/JobHistoryPage';
+import SignUpPage from './Pages/SignUpPage';
+import ProfilePage from './Pages/ProfilePage';
+
 
 
 function App() {
@@ -28,18 +36,26 @@ function App() {
   return (
     <MantineProvider defaultColorScheme='dark' theme={theme}>
       <BrowserRouter>
+      <div className='relative'>
       <Header/>
       <Divider size = 'xs'mx="md"/>  
       <Routes>
+        <Route path = '/profile' element={<ProfilePage/>}></Route>
+        <Route path ='/job-history' element={<JobHistoryPage/>}></Route>
+        <Route path ='/posted-job' element={<PostedJobPage/>}></Route>
+        <Route path ='/company' element={<CompanyPage/>}></Route>
         <Route path ='/apply-job' element={<ApplyJobPage/>}></Route>
         <Route path ='/post-job' element={<PostJobPage/>}></Route>
         <Route path ='/find-talent' element={<FindTalentPage/>}></Route>
         <Route path ='/jobs' element={<JobDescPage/>}></Route>
         <Route path ='/find-jobs' element={<FindJobsPage/>}></Route>
         <Route path ='/talent-profile' element={<TalentProfilePage/>}></Route>
+        <Route path ='/signup' element={<SignUpPage/>}></Route>
+        <Route path ='/login' element={<SignUpPage/>}></Route>
         <Route path ='*' element={<HomePage/>}></Route>
       </Routes>
       <Footer/>
+      </div>
       </BrowserRouter>
     </MantineProvider>
   )
